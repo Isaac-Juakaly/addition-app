@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition de deux nombres</title>
+</head>
+<body>
+    <h2>Addition de deux nombres</h2>
+    <form method="POST">
+        <input type="text" name="num1" placeholder="Premier nombre" required>
+        <input type="text" name="num2" placeholder="Deuxième nombre" required>
+        <button type="submit">Additionner</button>
+    </form>
+
+    {% if result is not none %}
+        <h3>Résultat: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
